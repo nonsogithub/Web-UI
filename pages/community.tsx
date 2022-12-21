@@ -1,0 +1,22 @@
+/** @format */
+import type { NextPage } from "next";
+import React, { useEffect, useState } from "react";
+import { ethers } from "ethers";
+import { useRouter } from "next/router";
+import type { ReactElement } from "react";
+import Head from "next/head";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import Community from "../components/Community";
+
+const CommunityPage: NextPage = () => {
+	return (
+		<div className="gaga_online">
+			<NavBar />
+			<Community />
+			<Footer />
+		</div>
+	);
+};
+
+export default CommunityPage;

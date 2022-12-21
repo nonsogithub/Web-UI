@@ -1,0 +1,99 @@
+.marketplace_header {
+    margin: 1.5rem 0;
+    border-bottom: 1px solid #e1e4e8;
+    h3 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #000;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 700;
+        color: #717172;
+        margin-top: -1.5rem;
+    }
+    @media screen and (max-width: 960px) {
+        margin-top: 8rem;
+          h3 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+                width: 100%;
+                margin-top: -1rem;
+            }
+    }
+}
+
+.marketplace_header_two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e4e8;
+
+    .marketplace_subheader {
+        h3 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #000;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 700;
+            color: #717172;
+            margin-top: -1.5rem;
+            word-spacing: 0.25px;
+            width: 488px;
+        }
+        @media screen and (max-width: 960px) {
+            h3 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+                width: 100%;
+                margin-top: -1rem;
+            }
+        }
+    }
+    .marketplace_search {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        background-color: #fafafa;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        input {
+            width: 100%;
+            border: none;
+            background: none;
+            padding: 0.5rem 1rem;
+            outline: #717172;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        .marketplace_search {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.gridSystem {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    @media screen and (max-width: 960px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}

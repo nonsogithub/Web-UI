@@ -1,0 +1,70 @@
+.community_div {
+    background: white;
+    margin-top: 5rem;
+}
+
+.community_header {
+    margin: 2rem 0;
+}
+.community_header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+.community_header p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #717172;
+    margin-top: -1rem;
+}
+
+.community_socialhandles {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 4rem;
+}
+.socialmedia_handles {
+    
+}
+.socialmedia_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socialmedia_logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socialmedia_logo p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+}
+.socialmedia_header button {
+    background: #e3e3e3;
+    cursor: pointer;
+    color: #717172;
+    border: none;
+    padding: 0.8rem 1.7rem;
+    border-radius: 5px;
+}
+.socialmedia_body {
+    font-size: 14px;
+    margin-top: -0.8rem;
+    color: #717172;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 960px) {
+    .community_socialhandles {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .socialmedia_body {
+        width: 100%;
+    }
+}
+    
