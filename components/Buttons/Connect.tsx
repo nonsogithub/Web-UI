@@ -1,12 +1,21 @@
 import React from 'react';
+import { useAppDispatch,} from "../../appStore/hooks";
+import { openModal } from "../../reduxSlices/allModalSlice";
 import styles from './Buttons.module.css';
 
 const Connect = () => {
+      const dispatch = useAppDispatch();
+			const handleWaitlistModal = () => {
+				dispatch(openModal("waitlistmodal"));
+    };
+    
     return (
-        <button type="button" className={styles.connect_button}>
-            Connect Wallet
-        </button>
-    );
+			<div onClick={handleWaitlistModal}>
+				<button type="button" className={styles.connect_button}>
+					Join Waitlist
+				</button>
+			</div>
+		);
 };
 
 export default Connect;

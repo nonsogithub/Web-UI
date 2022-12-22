@@ -44,12 +44,16 @@
     color: #000000;
 }
 .socialmedia_header button {
-    background: #e3e3e3;
+     background-color: #f57316;
+     color: white;
     cursor: pointer;
-    color: #717172;
     border: none;
     padding: 0.8rem 1.7rem;
     border-radius: 5px;
+}
+.socialmedia_header button:hover {
+    background-color: #f1aa6f;
+    color: white;
 }
 .socialmedia_body {
     font-size: 14px;

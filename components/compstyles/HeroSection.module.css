@@ -6,6 +6,9 @@
     /* width: 1440px; */
     /* height: 100vh; */
 }
+.hero_button{
+    margin-bottom: 10rem;
+}
 
 .hero_div {
     display: flex;

@@ -58,7 +58,7 @@
     position: fixed;
     top: 70px;
     width: 100%;
-    height: 45%;
+    height: 200px;
     transition: showNav 0.2s all;
     background-color: white;
 }
