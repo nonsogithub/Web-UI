@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
 		<div>
 			<Head>
-				<title>Block Plot</title>
+				<title>Blockplot</title>
 				<meta name="description" content="Blockchain Housing Investment" />
 				<link rel="icon" href="/blockplot.ico" />
 			</Head>
