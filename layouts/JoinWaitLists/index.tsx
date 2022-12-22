@@ -104,7 +104,7 @@ const JoinWaitList = () => {
 						/>
 						{/* <button type="submit">Join Waitlist</button> */}
 						<button  type="submit">
-							{isLoading ? <div>Loadi</div> : <div>Join Waitlist</div>}
+							{isLoading ? <div>Loading</div> : <div>Join Waitlist</div>}
 						</button>
 					</form>
 				</div>
