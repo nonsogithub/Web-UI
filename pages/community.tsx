@@ -11,7 +11,12 @@ import Community from "../components/Community";
 
 const CommunityPage: NextPage = () => {
 	return (
-		<div className="gaga_online">
+		<div>
+			<Head>
+				<title>Community| Block Plot</title>
+				<meta name="description" content="Blockchain Housing Investment" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<NavBar />
 			<Community />
 			<Footer />

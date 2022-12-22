@@ -16,7 +16,7 @@ import styles from "./compstyles/Community.module.css";
 
 const Community = () => {
 	return (
-		<div className="gaga_online">
+		<div>
 			<div className="container">
 				<div className={styles.community_div}>
 					<div className={styles.community_header}>

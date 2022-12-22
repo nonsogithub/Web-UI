@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     const [loader, setLoader] = useState(true);
 		const [timer, setTimer] = useState(3);
 
-		useLocoScroll(!loader);
+		// useLocoScroll(!loader);
 
 		const id = useRef<any>(null);
 
@@ -44,9 +44,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 
 	return (
-		<div
-			data-scroll-container
-			style={{ minHeight: "100vh", perspective: "1px" }}>
+		<div data-scroll-container>
+			{/* style={{ perspective: "1px" }} */}
+			{/* minHeight: "100vh" */}
 			<Provider store={store}>
 				{loader ? (
 					<Loader />
