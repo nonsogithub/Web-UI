@@ -1,12 +1,11 @@
 /** @format */
-
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import { toast } from "react-toastify";
 import styles from "./JoinWaitList.module.scss";
 import { useAppDispatch, useAppSelector } from "../../appStore/hooks";
 import { closeModal } from "../../reduxSlices/allModalSlice";
 import { useWaitListMutation } from "../../services/userServices";
+import { Bars } from "react-loader-spinner";
 
 const JoinWaitList = () => {
 	const dispatch = useAppDispatch();
@@ -35,8 +34,8 @@ const JoinWaitList = () => {
 
 	useEffect(() => {
 		if (isSuccess) {
-            toast.success("Added Successfuly to our waitlist");
-           dispatch(closeModal());
+			toast.success("Added Successfuly to our waitlist");
+			dispatch(closeModal());
 		} else if (isError) {
 			toast.error((error as any).data.message);
 		}
@@ -103,8 +102,22 @@ const JoinWaitList = () => {
 							placeholder="Enter Phone Number"
 						/>
 						{/* <button type="submit">Join Waitlist</button> */}
-						<button  type="submit">
-							{isLoading ? <div>Loading</div> : <div>Join Waitlist</div>}
+						<button type="submit">
+							{isLoading ? (
+								<div>
+									<Bars
+										height="30"
+										width="30"
+										color="#fff"
+										ariaLabel="bars-loading"
+										wrapperStyle={{}}
+										wrapperClass=""
+										visible={true}
+									/>
+								</div>
+							) : (
+								<div>Join Waitlist</div>
+							)}
 						</button>
 					</form>
 				</div>

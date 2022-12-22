@@ -10,8 +10,6 @@ import ModalReducer from "../reduxSlices/allModalSlice";
 import UserReducer from "../reduxSlices/userSlice";
 import WalletReducer from "../reduxSlices/walletConnectionSlices";
 import { userServices } from "../services/userServices";
-// import { userServices } from '../services/userServices';
-// import { assetServices } from '../services/propertiesServices';
 
 export const store = configureStore({
 	reducer: {
