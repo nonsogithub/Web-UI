@@ -1,5 +1,6 @@
 /** @format */
 import React, { useState, useEffect } from "react";
+import PhoneInput from 'react-phone-number-input'
 import { toast } from "react-toastify";
 import styles from "./JoinWaitList.module.scss";
 import { useAppDispatch, useAppSelector } from "../../appStore/hooks";
@@ -12,15 +13,15 @@ const JoinWaitList = () => {
 	const [userData, setUserData] = useState({
 		name: "",
 		email: "",
-		phonenumber: "",
 	});
+	const [phonenumber, setPhonenumber] = useState<any>();
 
 	const [waitList, { isLoading, isSuccess, isError, error }] =
 		useWaitListMutation();
 
 	const handleSubmit = async (e: any) => {
 		e.preventDefault();
-		const { name, email, phonenumber } = userData;
+		const { name, email} = userData;
 		try {
 			await waitList({
 				name: name,
@@ -86,7 +87,7 @@ const JoinWaitList = () => {
 						/>
 
 						<label htmlFor="email">Contact Phone Number</label>
-						<input
+						{/* <input
 							type="tel;"
 							name="phonenumber"
 							// id="phonenumber"
@@ -100,6 +101,14 @@ const JoinWaitList = () => {
 							required
 							maxLength={15}
 							placeholder="Enter Phone Number"
+						/> */}
+						<PhoneInput
+							placeholder="Enter phone number"
+							international
+							defaultCountry="NG"
+							countryCallingCodeEditable={false}
+							value={phonenumber}
+							onChange={setPhonenumber}
 						/>
 						{/* <button type="submit">Join Waitlist</button> */}
 						<button type="submit">

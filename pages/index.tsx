@@ -21,12 +21,12 @@ const Home: NextPage = () => {
 			</Head>
 
 			<NavBar />
-			<HeroSection />
-			<HeroSectionTwo />
-			<FeatureWallet />
-			<FasterTransactions />
-			<CTA />
-			<Footer />
+			{/* <HeroSection /> */}
+			{/* <HeroSectionTwo /> */}
+			{/* <FeatureWallet /> */}
+			{/* <FasterTransactions /> */}
+			{/* <CTA /> */}
+			{/* <Footer /> */}
 		</div>
 	);
 }

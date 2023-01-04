@@ -1,6 +1,7 @@
 /** @format */
 
 import "../styles/globals.css";
+import "react-phone-number-input/style.css";
 import React, { useEffect, useRef, useState } from "react";
 import type { AppProps } from "next/app";
 import { ToastContainer } from "react-toastify";
