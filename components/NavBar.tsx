@@ -7,7 +7,7 @@ import { setScreenSize, selectModal } from "../reduxSlices/allModalSlice";
 import { selectWalletInstance } from "../reduxSlices/walletConnectionSlices";
 import { useAppDispatch, useAppSelector } from "../appStore/hooks";
 import styles from "./compstyles/NavBar.module.css";
-import Connect from "./Buttons/Connect";
+import SmallJoinWaitList from "./Buttons/SmallJoinWaitList";
 
 const NavBar = () => {
 	const [toggle, setToggle] = useState(false);
@@ -26,11 +26,28 @@ const NavBar = () => {
 
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
+	const [colorChange, setColorchange] = useState(false);
+
+	useEffect(() => {
+		const changeNavbarColor = () => {
+			if (window.scrollY >= 60) {
+				setColorchange(true);
+			} else {
+				setColorchange(false);
+			}
+		};
+		changeNavbarColor();
+		window.addEventListener("scroll", changeNavbarColor);
+	}, []);
 
 	return (
 		<>
 			{screenSize <= 960 ? (
-				<div className={`${styles.navdiv} ${styles.fixed}`} id="page1">
+				<div
+					className={`${
+						colorChange ? `${styles.colorchange}` : `${styles.navdiv}`
+					}`}
+					id="page1">
 					<div className={styles.nav}>
 						<div className={styles.nav_padding}>
 							<div>
@@ -60,14 +77,18 @@ const NavBar = () => {
 								</Link>
 
 								<div onClick={() => setToggle(!toggle)}>
-									<Connect />
+									<SmallJoinWaitList />
 								</div>
 							</div>
 						)}
 					</div>
 				</div>
 			) : (
-				<div className={styles.navdiv} id="page1">
+				<div
+					className={`${
+						colorChange ? `${styles.colorchange}` : `${styles.navdiv}`
+					}`}
+					id="page1">
 					<div className="container">
 						<div className={styles.nav}>
 							<div>
@@ -87,7 +108,7 @@ const NavBar = () => {
 								</Link>
 							</div>
 							<div>
-								<Connect />
+								<SmallJoinWaitList />
 							</div>
 						</div>
 					</div>

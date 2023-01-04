@@ -1,43 +1,64 @@
+/** @format */
+
 .storebuttons {
-    background-color: #fafafa;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    padding: 0rem 1rem;
-    border-radius: 10px;
+	background-color: #fafafa;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	padding: 0rem 1rem;
+	border-radius: 10px;
 }
 
 .storebuttons h4 {
-    font-size: 12px;
-    color: #000000;
+	font-size: 12px;
+	color: #000000;
 }
 
 .storebuttons h3 {
-    margin-top: -10px;
-    color: #000000;
+	margin-top: -10px;
+	color: #000000;
 }
 
 .playstore {
-    width: 32px;
-    height: 32px;
+	width: 32px;
+	height: 32px;
 }
 
 .applestore {
-    width: 36.67px;
-    height: 36.67px;
+	width: 36.67px;
+	height: 36.67px;
 }
 
 .connect_button {
-    background: #f57316;
-    border-radius: 4px;
+	background: #f57316;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 700;
+	font-style: Bold;
+	color: #ffffff;
+	padding: 0.4rem 2rem;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.connect_button:hover,
+.smallconnect_button:hover {
+	opacity: 0.8;
+}
+
+.smallconnect_button {
+	background: #f57316;
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	padding: 8px, 12px, 8px, 12px;
+	width: 106px;
+	height: 40px;
+	border-radius: 2px;
     font-size: 16px;
-    line-height: 32px;
-    font-weight: 700;
-    font-style: Bold;
-    color: #ffffff;
-    padding: 0.4rem 2rem;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+	line-height: 24px;
+	font-weight: 400;
 }

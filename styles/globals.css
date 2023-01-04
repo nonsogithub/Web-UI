@@ -11,7 +11,6 @@ body {
     font-family: Satoshi, sans-serif;
     overflow-x: hidden;
     background: white;
-    color-scheme: only light;
 }
 /* html{
   color-scheme: light;
@@ -105,7 +104,7 @@ Dashboard Layout Styles */
     border-radius: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
         color: black;
@@ -114,7 +113,7 @@ Dashboard Layout Styles */
         background: white;
         color: black;
     }
-}
+} */
 
 @media screen and (max-width: 960px) {
     .sidebar_main {

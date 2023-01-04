@@ -19,10 +19,12 @@ const Home: NextPage = () => {
 				<meta name="description" content="Blockchain Housing Investment" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-
+			
 			<NavBar />
-			{/* <HeroSection /> */}
-			{/* <HeroSectionTwo /> */}
+			<HeroSection />
+
+			{/* <HeroSection />
+			<HeroSectionTwo /> */}
 			{/* <FeatureWallet /> */}
 			{/* <FasterTransactions /> */}
 			{/* <CTA /> */}

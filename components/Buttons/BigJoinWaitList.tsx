@@ -3,7 +3,7 @@ import { useAppDispatch,} from "../../appStore/hooks";
 import { openModal } from "../../reduxSlices/allModalSlice";
 import styles from './Buttons.module.css';
 
-const Connect = () => {
+const BigJoinWaitList = () => {
       const dispatch = useAppDispatch();
 			const handleWaitlistModal = () => {
 				dispatch(openModal("waitlistmodal"));
@@ -18,4 +18,4 @@ const Connect = () => {
 		);
 };
 
-export default Connect;
+export default BigJoinWaitList;
