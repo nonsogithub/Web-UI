@@ -19,9 +19,12 @@ const Home: NextPage = () => {
 				<meta name="description" content="Blockchain Housing Investment" />
 				<link rel="icon" href="/blockplot.ico" />
 			</Head>
-			
-			<NavBar />
-			<HeroSection />
+
+			<div className={styles.nav_heroImage}>
+				<NavBar />
+				<HeroSection />
+			</div>
+			<Footer />
 
 			{/* <HeroSection />
 			<HeroSectionTwo /> */}
