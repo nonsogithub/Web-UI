@@ -39,6 +39,7 @@ const HeroSection = () => {
 			</div>
 		</div>
 
+
 		// <div className={styles.hero_main}>
 		// 	<div className={styles.hero_div}>
 		// 		<div className={styles.hero_contents}>

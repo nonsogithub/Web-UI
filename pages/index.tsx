@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
-import HeroSectionTwo from "../components/HeroSectionTwo";
+import EcoSystem from "../components/EcoSystem";
 import FeatureWallet from "../components/FeatureWallet";
 import FasterTransactions from "../components/FasterTransactions";
 import CTA from "../components/CTA";
@@ -24,9 +24,10 @@ const Home: NextPage = () => {
 				<NavBar />
 				<HeroSection />
 			</div>
+			<EcoSystem />
 			<Footer />
 
-			{/* <HeroSection />
+			{/*
 			<HeroSectionTwo /> */}
 			{/* <FeatureWallet /> */}
 			{/* <FasterTransactions /> */}
