@@ -1,0 +1,28 @@
+/** @format */
+
+.developersCards {
+	display: flex;
+	// flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	// max-width: 1200px;
+	// padding: 0 20px;
+	// width: 100%;
+
+	.developersCard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 293px;
+		cursor: pointer;
+		padding: 1rem 3rem;
+		border: #808080 solid 1px;
+		background: #ffffff;
+		border-radius: 2px;
+		color: #333333;
+		box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease-in-out;
+	}
+}

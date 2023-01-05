@@ -1,13 +1,15 @@
-.governance_card{
-            cursor: pointer;
-			padding: 1rem 3rem;
-			border: #808080 solid 1px;
-			background: #ffffff;
-			border-radius: 2px;
-			color: #333333;
-			box-shadow: 0 0 10px rgba(220, 220, 220, 0.12);
-			transition: all 0.3s ease-in-out;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+/** @format */
+
+.governance_card {
+	cursor: pointer;
+	padding: 1rem 3rem;
+	border: #808080 solid 1px;
+	background: #ffffff;
+	border-radius: 2px;
+	color: #333333;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }

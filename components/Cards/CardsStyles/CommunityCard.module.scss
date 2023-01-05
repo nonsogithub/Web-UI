@@ -1,0 +1,38 @@
+/** @format */
+
+.community_card {
+	cursor: pointer;
+	padding: 1rem 3rem;
+	border: #808080 solid 1px;
+	background: #ffffff;
+	border-radius: 2px;
+	color: #333333;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// justify-content: center;
+
+	.community_card__images_one {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+
+		.community_card__image {
+			display: flex;
+			gap: 0.5rem;
+		}
+	}
+	.community_card__images_two {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 40%;
+
+		.community_card__image {
+			display: flex;
+			gap: 0.5rem;
+		}
+	}
+}

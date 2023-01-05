@@ -42,7 +42,8 @@
 			border: #808080 solid 1px;
 			background: #ffffff;
 			border-radius: 8px;
-			box-shadow: 0 0 10px rgba(220, 220, 220, 0.12);
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+			// box-shadow: 0 0 10px rgba(220, 220, 220, 0.12);
 
 			h3 {
 				font-size: 20px;
@@ -106,7 +107,7 @@
 	}
 	.ecosystem_features_cards {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: center;
 
 		.ecosystem_features_card {
@@ -116,7 +117,7 @@
 			background: #ffffff;
 			border-radius: 2px;
 			color: #333333;
-			box-shadow: 0 0 10px rgba(220, 220, 220, 0.12);
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
 			transition: all 0.3s ease-in-out;
 
 			p {
