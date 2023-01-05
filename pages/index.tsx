@@ -25,6 +25,7 @@ const Home: NextPage = () => {
 				<HeroSection />
 			</div>
 			<EcoSystem />
+			<FasterTransactions />
 			<Footer />
 
 			{/*
