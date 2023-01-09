@@ -5,13 +5,11 @@ import "react-phone-number-input/style.css";
 import React, { useEffect, useRef, useState } from "react";
 import type { AppProps } from "next/app";
 import { ToastContainer } from "react-toastify";
-import useLocoScroll from "../hooks/useLocoScroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
 import "react-toastify/dist/ReactToastify.css";
 import { Provider } from "react-redux";
 import { store } from "../appStore/store";
 import Loader from "../components/Loader";
-import ModalLayout from "../layouts/ModalLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [loader, setLoader] = useState(true);
@@ -45,17 +43,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	return (
 		<div data-scroll-container>
-			{/* style={{ perspective: "1px" }} */}
-			{/* minHeight: "100vh" */}
 			<Provider store={store}>
 				<ToastContainer />
-				{loader ? (
-					<Loader />
-				) : (
-					<ModalLayout>
-						<Component {...pageProps} />
-					</ModalLayout>
-				)}
+				{loader ? <Loader /> : <Component {...pageProps} />}
 			</Provider>
 		</div>
 	);

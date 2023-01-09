@@ -1,21 +1,21 @@
-import React from 'react';
-import { useAppDispatch,} from "../../appStore/hooks";
+/** @format */
+
+import React from "react";
+import { useAppDispatch } from "../../appStore/hooks";
 import { openModal } from "../../reduxSlices/allModalSlice";
-import styles from './Buttons.module.css';
+import styles from "./Buttons.module.css";
+import Link from "next/link";
 
 const BigJoinWaitList = () => {
-      const dispatch = useAppDispatch();
-			const handleWaitlistModal = () => {
-				dispatch(openModal("waitlistmodal"));
-    };
-    
-    return (
-			<div onClick={handleWaitlistModal}>
+	return (
+		<Link href="/joinwaitlist" target="_blank" rel="noopener noreferrer">
+			<div>
 				<button type="button" className={styles.connect_button}>
 					Join Waitlist
 				</button>
 			</div>
-		);
+		</Link>
+	);
 };
 
 export default BigJoinWaitList;

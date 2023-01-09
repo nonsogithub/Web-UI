@@ -1,5 +1,6 @@
 /** @format */
 
+import Link from "next/link";
 import React from "react";
 import { useAppDispatch } from "../../appStore/hooks";
 import { openModal } from "../../reduxSlices/allModalSlice";
@@ -12,11 +13,13 @@ const SmallJoinWaitList = () => {
 	};
 
 	return (
-		<div onClick={handleWaitlistModal}>
-			<button type="button" className={styles.smallconnect_button}>
-				Join Waitlist
-			</button>
-		</div>
+		<Link href="/joinwaitlist" target="_blank" rel="noopener noreferrer">
+			<div>
+				<button type="button" className={styles.smallconnect_button}>
+					Join Waitlist
+				</button>
+			</div>
+		</Link>
 	);
 };
 
