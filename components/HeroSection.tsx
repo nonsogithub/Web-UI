@@ -14,9 +14,13 @@ import BigJoinWaitList from "./Buttons/BigJoinWaitList";
 const HeroSection = () => {
 
 	return (
-		<div className="container">
+		<div className="container" data-scroll-section>
 			<div className={styles.hero_main}>
-				<div className={styles.hero_texts}>
+				<div
+					className={styles.hero_texts}
+					data-scroll
+					data-scroll-direction="vertical"
+					data-scroll-speed="2">
 					<h1>Tokenized Assets Issuance and Exchange Protocol</h1>
 					<p>
 						Blockplot is a decentralized ecosystem for tokenized assets. A
@@ -26,7 +30,11 @@ const HeroSection = () => {
 					</p>
 					<BigJoinWaitList />
 				</div>
-				<div className={styles.hero_images}>
+				<div
+					className={styles.hero_images}
+					data-scroll
+					data-scroll-direction="vertical"
+					data-scroll-speed="2">
 					<img
 						src="./landingpageasserts/feature_wallet.svg"
 						alt="feature_wallet"

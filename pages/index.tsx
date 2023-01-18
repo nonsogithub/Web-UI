@@ -30,9 +30,6 @@ const Home: NextPage = () => {
 				<meta name="description" content="Blockchain Housing Investment" />
 				<link rel="icon" href="/blockplot.ico" />
 			</Head>
-			{/* <LocomotiveScrollProvider options={options} containerRef={ref}>
-				
-			</LocomotiveScrollProvider> */}
 			<div className={styles.nav_heroImage}>
 				<NavBar />
 				<HeroSection />
@@ -40,6 +37,10 @@ const Home: NextPage = () => {
 				<FasterTransactions />
 				<Footer />
 			</div>
+			{/* <LocomotiveScrollProvider
+				options={options}
+				containerRef={ref}></LocomotiveScrollProvider> */}
+
 			{/* <EcoSystem /> */}
 			{/* <FasterTransactions /> */}
 			{/* <Footer /> */}

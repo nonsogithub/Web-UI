@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-			<div className={styles.footer_div}>
+			<div className={styles.footer_div} data-scroll-section>
 				<div className={styles.footer_logotext}>
 					<h3>Blockplot</h3>
 					<div />

@@ -17,14 +17,24 @@ import { BsArrowUpRight } from "react-icons/bs";
 
 const EcoSystem = () => {
 	return (
-		<div className={styles.herotwo_div}>
+		<div className={styles.herotwo_div} data-scroll-section>
 			<div className="container">
 				<div className={styles.ecosystem_intro_governance}>
-					<div className={styles.ecosystem_intro_governance_header}>
+					<div
+						className={styles.ecosystem_intro_governance_header}
+						data-scroll
+						data-scroll-direction="vertical"
+						data-scroll-class="fadeIn"
+						data-scroll-repeat="true"
+						data-scroll-speed="3">
 						<h3>Africa’s first tokenized bank</h3>
 						<p>Community Owned, Complaint & Decentralized</p>
 					</div>
-					<div className={styles.ecosystem_intro_governance_cards}>
+					<div
+						className={styles.ecosystem_intro_governance_cards}
+						data-scroll
+						data-scroll-direction="vertical"
+						data-scroll-speed="2">
 						<div className={styles.ecosystem_intro_governance_card_header}>
 							<h3>Protocol Governance</h3>
 							<p>
@@ -50,7 +60,11 @@ const EcoSystem = () => {
 					</div>
 				</div>
 				<div className={styles.blockplot_ecosystem}>
-					<div className={styles.blockplot_ecosystem_card}>
+					<div
+						className={styles.blockplot_ecosystem_card}
+						data-scroll
+						data-scroll-direction="vertical"
+						data-scroll-speed="2">
 						<div>
 							<h3>Blockplot Ecosystem</h3>
 							<p>
@@ -63,7 +77,11 @@ const EcoSystem = () => {
 
 						<img src="./landingpageasserts/pattern.svg" />
 					</div>
-					<div className={styles.blockplot_gov}>
+					<div
+						className={styles.blockplot_gov}
+						data-scroll
+						data-scroll-direction="vertical"
+						data-scroll-speed="2">
 						<div>
 							<h3>Governance</h3>
 							<p>
@@ -145,28 +163,48 @@ const EcoSystem = () => {
 						</p>
 					</div>
 					<div>
-						<div className={styles.container}>
-							<p>Twitter</p>
-							<img src="./socials/twitter.svg" alt="twitter" />
-						</div>
+						<Link
+							href="https://twitter.com/blockplot"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className={styles.container}>
+								<p>Twitter</p>
+								<img src="./socials/twitter.svg" alt="twitter" />
+							</div>
+						</Link>
 					</div>
 					<div>
-						<div className={styles.container}>
-							<p>Reddit</p>
-							<img src="./socials/reddit.svg" alt="reddit" />
-						</div>
+						<Link
+							href="https://www.reddit.com/r/Blockplotfinance/"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className={styles.container}>
+								<p>Reddit</p>
+								<img src="./socials/reddit.svg" alt="reddit" />
+							</div>
+						</Link>
 					</div>
 					<div>
-						<div className={styles.container}>
-							<p>Instagram</p>
-							<img src="./socials/Instagram.svg" alt="reddit" />
-						</div>
+						<Link
+							href="https://www.instagram.com/blockplot/"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className={styles.container}>
+								<p>Instagram</p>
+								<img src="./socials/Instagram.svg" alt="reddit" />
+							</div>
+						</Link>
 					</div>
 					<div>
-						<div className={styles.container}>
-							<p>Linkedin</p>
-							<img src="./socials/linkedin.svg" alt="linkedin" />
-						</div>
+						<Link
+							href="https://www.linkedin.com/company/blockplot/"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className={styles.container}>
+								<p>Linkedin</p>
+								<img src="./socials/linkedin.svg" alt="linkedin" />
+							</div>
+						</Link>
 					</div>
 					<div>
 						<div className={styles.container}>
@@ -181,10 +219,15 @@ const EcoSystem = () => {
 						</div>
 					</div>
 					<div>
-						<div className={styles.container}>
-							<p>Medium</p>
-							<img src="./socials/medium.svg" alt="Medium" />
-						</div>
+						<Link
+							href="https://medium.com/@blockplot"
+							target="_blank"
+							rel="noopener noreferrer">
+							<div className={styles.container}>
+								<p>Medium</p>
+								<img src="./socials/medium.svg" alt="Medium" />
+							</div>
+						</Link>
 					</div>
 				</div>
 			</div>

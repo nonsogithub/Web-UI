@@ -60,7 +60,7 @@ const JoinWaitListComp = () => {
 	}, [isSuccess, isError, error]);
 	return (
 		<>
-			<div className="container">
+			<div className="container" data-scroll-section>
 				<Link href="/">
 					<div className={styles.joinwaitlist_nav}>
 						<h2>BlockPlot</h2>

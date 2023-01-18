@@ -63,7 +63,7 @@ const NavBar = () => {
 			) : (
 				
 			)} */}
-			<div id="page1">
+			<div id="page1" data-scroll-section>
 				<div className="container">
 					<div className={styles.nav}>
 						<div>

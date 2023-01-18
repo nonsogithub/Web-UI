@@ -70,7 +70,7 @@ const FasterTransactions = () => {
 		},
 	];
 	return (
-		<div className={styles.faster_transactions}>
+		<div className={styles.faster_transactions} data-scroll-section>
 			<div className="container">
 				<div className={styles.faster_transactions_faq}>
 					<h1 className={styles.faster_transactions_faq_title}>
