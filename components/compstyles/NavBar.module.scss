@@ -1,33 +1,19 @@
 /** @format */
 
 .navdiv {
-	position: fixed;
-	top: 0;
 	padding: 1rem 0;
 	height: 80px;
 	background-color: transparent;
 	cursor: pointer;
 	transition: 0.8s all ease;
-	z-index: 1;
 	width: 100%;
 }
 .colorchange {
-    position: fixed;
-	top: 0;
-	padding: 1rem 0;
-	height: 80px;
-	cursor: pointer;
-	transition: 0.8s all ease;
-	z-index: 1;
-	width: 100%;
-	background: white;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 10rem;
 }
 .nav h2 {
 	font-style: bold;
@@ -45,14 +31,22 @@
 	display: flex;
 	align-items: center;
 	gap: 2rem;
+
+	p {
+		font-size: 16px;
+		color: #fff;
+		line-height: 24px;
+		font-weight: 600;
+		letter-spacing: 0.15px;
+	}
+
+	@media (max-width: 768px) {
+		p {
+			display: none;
+		}
+	}
 }
-.menu_items p {
-	font-size: 16px;
-	color: #151517;
-	line-height: 24px;
-	font-weight: 600;
-	letter-spacing: 0.15px;
-}
+
 .connect_button button {
 	cursor: pointer;
 	color: #fff;

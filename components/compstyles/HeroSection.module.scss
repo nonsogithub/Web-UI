@@ -7,6 +7,10 @@
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
+
+	@media (max-width: 768px) {
+		padding-top: 4rem;
+	}
 }
 .hero_texts {
 	display: flex;
@@ -22,17 +26,28 @@
 		width: 815px;
 		line-height: 76.16px;
 		font-style: bold;
-		color: #000000;
+		color: #ffffff;
 		text-align: center;
 	}
 	p {
 		width: 691px;
 		font-size: 18px;
 		text-align: center;
-		color: #717172;
+		color: #ffffff;
 		line-height: 27.09px;
 		margin-bottom: 1.5rem;
 		margin-top: -1rem;
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 40px;
+			line-height: 47.6px;
+			width: 100%;
+		}
+		p {
+			width: 100%;
+		}
 	}
 }
 
@@ -42,202 +57,3 @@
 		height: auto;
 	}
 }
-// .hero_main {
-//     background-image: url('../../public//landingpageasserts/HeroImage.svg');
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     /* width: 1440px; */
-//     /* height: 100vh; */
-// }
-// .hero_button{
-//     margin-bottom: 10rem;
-// }
-
-// .hero_div {
-//     display: flex;
-//     flex-direction: row;
-// }
-
-// .hero_contents {
-//     margin-left: 7rem;
-//     width: 50%;
-// }
-// .hero_headings h1 {
-//     font-size: 72px;
-//     font-weight: 700;
-//     line-height: 96px;
-//     font-style: bold;
-//     margin-top: 10rem;
-//     color: #000000;
-// }
-// .hero_headings p {
-//     font-size: 24px;
-//     line-height: 32px;
-//     font-weight: 700;
-//     font-style: Bold;
-//     color: #717172;
-//     width: 80%;
-// }
-// .user_counter {
-//    margin-left: 7rem;
-//     display: flex;
-//     gap: 2rem;
-// }
-// .user_count h1 {
-//     font-size: 48px;
-//     font-weight: 500;
-//     line-height: 72px;
-//     font-style: medium;
-//     color: #717172;
-// }
-// .user_count p {
-//     margin-top: -1.5rem;
-//     font-size: 16px;
-//     font-weight: 700;
-//     line-height: 24px;
-//     font-style: Bold;
-//     color: #717172;
-// }
-
-// .hero_svgs {
-//     position: relative;
-// }
-
-// .singleblock_one {
-//     position: absolute;
-//     top: 130px;
-//     /* position: absolute;
-//     right: 0; */
-//     /* top: 130px; */
-//     animation: bouncing1 0.9s ease-in-out infinite;
-// }
-// @keyframes bouncing1 {
-//     0% {
-//         transform: translateY(5px);
-//     }
-
-//     50% {
-//         transform: translateY(-30px);
-//         filter: drop-shadow(-10px 70px 10px #ededff);
-//     }
-
-//     100% {
-//         transform: translateY(6px);
-//     }
-// }
-// .singleblock_two {
-//     position: absolute;
-//     top: 90px;
-//     left: 420px;
-//     animation: bouncing2 1s ease-in-out infinite;
-
-// }
-// @keyframes bouncing2 {
-//     0% {
-//         transform: translateY(1px);
-//     }
-//     50% {
-//         transform: translateY(-30px);
-//         filter: drop-shadow(-10px 70px 10px #ededff);
-//     }
-//     100% {
-//         transform: translateY(0);
-//     }
-// }
-// .majorhouse {
-//     position: absolute;
-//     top: 140px;
-//     left: 10px;
-// }
-// .cardhouse {
-//     position: absolute;
-//     top: 480px;
-//     left: 260px;
-// }
-// .doubleblock {
-//     position: absolute;
-//     top: 580px;
-//     left: 100px;
-//     animation: bouncing2 1s ease-in-out infinite;
-// }
-// @keyframes bouncing3 {
-//     0% {
-//         transform: translateY(1px);
-//     }
-
-//     50% {
-//         transform: translateY(-50px);
-//         filter: drop-shadow(-10px 70px 10px #ededff);
-//     }
-
-//     100% {
-//         transform: translateY(2px);
-//     }
-// }
-
-// @media screen and (max-width: 960px) {
-//         .hero_main{
-//                 background: white;
-//         }
-//     .hero_div {
-//         flex-direction: column;
-//     }
-//     .hero_contents, .user_counter {
-//         margin: 0;
-//         padding: 0;
-//         width: 100%;
-//     }
-//     .user_counter{
-//         margin-top: -4rem;
-//         align-items: center;
-//         justify-content: center;
-//     }
-//     .hero_headings h1 {
-//         font-size: 40px;
-//         font-weight: 700;
-//         line-height: 42px;
-//         margin-top: 8rem;
-//     }
-//     .hero_headings p {
-//         font-size: 20px;
-//         line-height: 32px;
-//         font-weight: 700;
-//         font-style: Bold;
-//         color: #717172;
-//         /* width: 80%; */
-//     }
-//     .hero_headings div{
-//         margin-top: 2rem;
-//     }
-//     .doubleblock {
-//     position: static;
-//       left: 10px;
-//     }
-//     .majorhouse{
-//         position: static;
-//         left: -20px;
-//     }
-//     .singleblock_two{
-//         top: 0;
-//         right: 30px;
-//     }
-//     .cardhouse, .singleblock_one{
-//         display: none;
-//     }
-//     .hero_svgs {
-//     margin-top: -2rem;
-//     }
-
-// }
-
-// @media screen and (max-width: 760px) {
-//     .hero_div {
-//         flex-direction: column;
-//     }
-//     .hero_contents {
-//         margin: 0;
-//         padding: 0 2rem;
-//         width: 100%;
-//     }
-// }

@@ -1,0 +1,56 @@
+/** @format */
+
+.modal_container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	backdrop-filter: blur(5px);
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.wallet_modal {
+	background: white;
+	filter: drop-shadow(1px 8px 10px #c7c7f4);
+	padding: 1rem 3rem;
+	border-radius: 1rem;
+	width: 410px;
+    margin-top: -4rem;
+	animation: scaleup 0.5s;
+}
+
+.wallet_modal_header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.wallet_modal_header h3 {
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+    text-align: center;
+}
+.wallet_modal_header button {
+	background: #f57316;
+	border: none;
+	color: #fff;
+	border-radius: 10px;
+	padding: 0.9rem 2rem;
+	margin: 1rem 0;
+	cursor: pointer;
+}
+@keyframes scaleup {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}

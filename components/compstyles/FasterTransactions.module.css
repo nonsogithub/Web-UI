@@ -1,17 +1,11 @@
 /** @format */
 
 .faster_transactions {
-	/* background-image: url("../../public//landingpageasserts/fastertransaction.svg"); */
-	background-image: url("../../public//landingpageasserts/ecosysytem.svg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	/* position: relative; */
-	/* padding: 2rem 4rem; */
-	/* height:1224px; */
 }
 .faster_transactions_maincontainer {
-	background-image: url("../../public//landingpageasserts/blacksvg_bg.svg");
+	background-image: url("../../public/landingpageasserts/blacksvg_bg.svg");
+	background-color: #CD5B09;
+	  background-blend-mode: screen;
 	height: 404.94px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -20,7 +14,6 @@
 	display: flex;
 	gap: 2rem;
 	margin-bottom: 4rem;
-	/* justify-content: space-between; */
 }
 
 .faster_transactions_leftcontent_heading {
@@ -32,7 +25,7 @@
 	width: 60%;
 }
 .faster_transactions_leftcontent_paragraph {
-	color: #717172;
+	color: #FDE7D8;
 	font-size: 24px;
 	line-height: 32px;
 	font-style: bold;
@@ -40,7 +33,7 @@
 	width: 50%;
 }
 .faster_transactions_leftcontent_paragraph span {
-	color: #f57316;
+	color: #fafafa;
 }
 .faster_transactions_leftcontent_buttons {
 	display: flex;
@@ -210,7 +203,7 @@
 	.faster_transactions_secondcontainer_firstcontent {
 		margin-top: 8rem;
 	}
-	
+
 	.faster_transactions_secondcontainer_secondcontent {
 		flex-direction: column;
 		gap: 0;
@@ -225,9 +218,8 @@
 	}
 }
 
-
-.faster_transactions_faq{
-	background-color: #fff;
+.faster_transactions_faq {
+	background-color: transparent;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -235,30 +227,34 @@
 	justify-content: center;
 	margin: 8rem 0;
 }
-.accordion_width{
+.faster_transactions_faq h1 {
+	color: #fff;
+}
+.accordion_width {
 	width: 100%;
-	background-color: #fff;
+	background-color: transparent;
 	/* max-width: 1200px; */
 }
-.accordion_header{
-	background-color: #fff;
+.accordion_header {
+	background-color: transparent;
 	display: flex;
 	width: 100%;
 	border: none;
 	border-bottom: #717172 1px solid;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 2rem;
+	/* padding: 1rem 1rem; */
 	cursor: pointer;
+	color: #fff;
 }
-.accordion_body{
+.accordion_body {
 	background-color: #fff;
 	width: 100%;
 	padding: 0.2rem 2rem;
 	border-bottom: #717172 1px solid;
 }
- .accordion_body p{
-		font-size: 16px;
-		line-height: 24px;
-		color: #333333;
-	}
+.accordion_body p {
+	font-size: 16px;
+	line-height: 24px;
+	color: #333333;
+}

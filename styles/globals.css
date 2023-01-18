@@ -13,6 +13,9 @@
 	font-family: "Mena Grotesk";
 	src: url("/MenaGrotesk-Medium.otf");
 }
+.g-height{
+	height: 100%;
+}
 html,
 body {
 	padding: 0;
@@ -20,6 +23,7 @@ body {
 	font-family: "Almarai", sans-serif;
 	overflow-x: hidden;
 	background: white;
+	/* height: 100%; */
 }
 /* html{
   color-scheme: light;
@@ -31,7 +35,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-.hn{
+.hn {
 	border: none;
 }
 .loaders {

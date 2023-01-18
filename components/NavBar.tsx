@@ -6,43 +6,20 @@ import Link from "next/link";
 import { setScreenSize, selectModal } from "../reduxSlices/allModalSlice";
 import { selectWalletInstance } from "../reduxSlices/walletConnectionSlices";
 import { useAppDispatch, useAppSelector } from "../appStore/hooks";
-import styles from "./compstyles/NavBar.module.css";
+import styles from "./compstyles/NavBar.module.scss";
 import SmallJoinWaitList from "./Buttons/SmallJoinWaitList";
 
 const NavBar = () => {
 	const [toggle, setToggle] = useState(false);
 	const [verified, setVerified] = useState(false);
 	const dispatch = useAppDispatch();
-	const { screenSize }: any = useAppSelector(selectModal);
-	const { isConnected, address } = useAppSelector(selectWalletInstance);
-	useEffect(() => {
-		const handleResize = () => {
-			dispatch(setScreenSize(window.innerWidth));
-		};
 
-		window.addEventListener("resize", handleResize);
 
-		handleResize();
-
-		return () => window.removeEventListener("resize", handleResize);
-	}, []);
-	const [colorChange, setColorchange] = useState(false);
-
-	useEffect(() => {
-		const changeNavbarColor = () => {
-			if (window.scrollY >= 60) {
-				setColorchange(true);
-			} else {
-				setColorchange(false);
-			}
-		};
-		changeNavbarColor();
-		window.addEventListener("scroll", changeNavbarColor);
-	}, []);
+	
 
 	return (
 		<>
-			{screenSize <= 960 ? (
+			{/* {screenSize <= 960 ? (
 				<div
 					className={`${
 						colorChange ? `${styles.colorchange}` : `${styles.navdiv}`
@@ -84,36 +61,25 @@ const NavBar = () => {
 					</div>
 				</div>
 			) : (
-				<div
-					className={`${
-						colorChange ? `${styles.colorchange}` : `${styles.navdiv}`
-					}`}
-					id="page1">
-					<div className="container">
-						<div className={styles.nav}>
-							<div>
-								<Link href="/" legacyBehavior>
-									<h2>BlockPlot</h2>
-								</Link>
-							</div>
-							<div className={styles.menu_items}>
-								<Link
-									href="https://blockplots-organization.gitbook.io/docs/"
-									target="_blank"
-									rel="noopener noreferrer">
-									<p>Docs</p>
-								</Link>
-								<Link href="/community" legacyBehavior>
-									<p>Community</p>
-								</Link>
-							</div>
-							<div>
-								<SmallJoinWaitList />
-							</div>
+				
+			)} */}
+			<div id="page1">
+				<div className="container">
+					<div className={styles.nav}>
+						<div>
+							<Link href="/" legacyBehavior>
+								<h2>BlockPlot</h2>
+							</Link>
+						</div>
+						<div className={styles.menu_items}>
+							<Link href="/community" legacyBehavior>
+								<p>Community</p>
+							</Link>
+							<SmallJoinWaitList />
 						</div>
 					</div>
 				</div>
-			)}
+			</div>
 		</>
 	);
 };

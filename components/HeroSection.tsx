@@ -12,10 +12,6 @@ import styles from "./compstyles/HeroSection.module.scss";
 import BigJoinWaitList from "./Buttons/BigJoinWaitList";
 
 const HeroSection = () => {
-	const dispatch = useAppDispatch();
-	const handleWaitlistModal = () => {
-		dispatch(openModal("waitlistmodal"));
-	};
 
 	return (
 		<div className="container">
