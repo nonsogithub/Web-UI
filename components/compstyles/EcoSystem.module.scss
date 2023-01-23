@@ -8,7 +8,7 @@
 	align-items: center;
 	gap: 2rem;
 
-	@media (max-width: 768px) {
+	@media (max-width: 994px) {
 		flex-direction: column;
 	}
 	.ecosystem_intro_governance_header {
@@ -27,7 +27,7 @@
 			color: #fde7d8;
 			width: 242px;
 		}
-		@media (max-width: 768px) {
+		@media (max-width: 994px) {
 			h3 {
 				font-size: 29px;
 				line-height: 35.1px;
@@ -47,7 +47,7 @@
 		height: 440px;
 		padding: 1rem 3rem;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1153px) {
 			padding: 1rem 1rem;
 			border-radius: 20px;
 			background-position: cover;

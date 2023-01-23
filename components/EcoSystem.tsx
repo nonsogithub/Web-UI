@@ -20,13 +20,7 @@ const EcoSystem = () => {
 		<div className={styles.herotwo_div} data-scroll-section>
 			<div className="container">
 				<div className={styles.ecosystem_intro_governance}>
-					<div
-						className={styles.ecosystem_intro_governance_header}
-						data-scroll
-						data-scroll-direction="vertical"
-						data-scroll-class="fadeIn"
-						data-scroll-repeat="true"
-						data-scroll-speed="3">
+					<div className={styles.ecosystem_intro_governance_header}>
 						<h3>Africa’s first tokenized bank</h3>
 						<p>Community Owned, Complaint & Decentralized</p>
 					</div>

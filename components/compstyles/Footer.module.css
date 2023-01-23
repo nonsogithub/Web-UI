@@ -50,7 +50,7 @@
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .footer_div{
     background-color: #000000;
     padding: 1rem 2rem;

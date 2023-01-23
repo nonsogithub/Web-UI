@@ -6,9 +6,8 @@ const Playstore = () => {
     const LINK =
         'https://expo.dev/accounts/stevepath/projects/blockplot-mobile/builds/1de619b7-eb1c-401a-9e33-78a6d1acffd3';
     return (
-        (<Link href={LINK} target="_blank" rel="noopener noreferrer">
-
-            <div className={styles.storebuttons}>
+        
+          <div className={styles.storebuttons}>
                 <div>
                     <img
                         src="./landingpageasserts/Playstore.svg"
@@ -21,8 +20,7 @@ const Playstore = () => {
                     <h3>Playstore</h3>
                 </div>
             </div>
-
-        </Link>)
+        
     );
 };
 
