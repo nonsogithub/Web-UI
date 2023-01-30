@@ -10,16 +10,13 @@ import styles from "./compstyles/NavBar.module.scss";
 import SmallJoinWaitList from "./Buttons/SmallJoinWaitList";
 
 const NavBar = () => {
-	const [toggle, setToggle] = useState(false);
-	const [verified, setVerified] = useState(false);
-	const dispatch = useAppDispatch();
+  const [toggle, setToggle] = useState(false);
+  const [verified, setVerified] = useState(false);
+  const dispatch = useAppDispatch();
 
-
-	
-
-	return (
-		<>
-			{/* {screenSize <= 960 ? (
+  return (
+    <>
+      {/* {screenSize <= 960 ? (
 				<div
 					className={`${
 						colorChange ? `${styles.colorchange}` : `${styles.navdiv}`
@@ -63,25 +60,25 @@ const NavBar = () => {
 			) : (
 				
 			)} */}
-			<div id="page1" data-scroll-section>
-				<div className="container">
-					<div className={styles.nav}>
-						<div>
-							<Link href="/" legacyBehavior>
-								<h2>BlockPlot</h2>
-							</Link>
-						</div>
-						<div className={styles.menu_items}>
-							<Link href="/community" legacyBehavior>
-								<p>Community</p>
-							</Link>
-							<SmallJoinWaitList />
-						</div>
-					</div>
-				</div>
-			</div>
-		</>
-	);
+      <div id="page1" data-scroll-section>
+        <div className="container">
+          <div className={styles.nav}>
+            <div>
+              <Link href="/" legacyBehavior>
+                <h2>Blockplot</h2>
+              </Link>
+            </div>
+            <div className={styles.menu_items}>
+              <Link href="/community" legacyBehavior>
+                <p>Community</p>
+              </Link>
+              <SmallJoinWaitList />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default NavBar;

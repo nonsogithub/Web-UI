@@ -1,450 +1,449 @@
 /** @format */
 
 .herotwo_div {
-	padding-top: 8rem;
+  padding-top: 8rem;
 }
 .ecosystem_intro_governance {
-	display: flex;
-	align-items: center;
-	gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 
-	@media (max-width: 994px) {
-		flex-direction: column;
-	}
-	.ecosystem_intro_governance_header {
-		h3 {
-			font-family: "Mena Grotesk, sans-serif";
-			width: 348px;
-			font-size: 40px;
-			line-height: 48px;
-			font-style: bold;
-			color: #fde7d8;
-		}
-		p {
-			font-size: 20px;
-			margin-top: -0.5rem;
-			font-style: normal;
-			color: #fde7d8;
-			width: 242px;
-		}
-		@media (max-width: 994px) {
-			h3 {
-				font-size: 29px;
-				line-height: 35.1px;
-				width: 100%;
-			}
-			p {
-				width: 100%;
-			}
-		}
-	}
-	.ecosystem_intro_governance_cards {
-		background-image: url("../../public//landingpageasserts/governance_portal.svg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		width: 796px;
-		height: 440px;
-		padding: 1rem 3rem;
+  @media (max-width: 994px) {
+    flex-direction: column;
+  }
+  .ecosystem_intro_governance_header {
+    h3 {
+      font-family: "Mena Grotesk, sans-serif";
+      width: 348px;
+      font-size: 40px;
+      line-height: 48px;
+      font-style: bold;
+      color: #fde7d8;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 20px;
+      margin-top: -0.5rem;
+      font-style: normal;
+      color: #fde7d8;
+      width: 242px;
+    }
+    @media (max-width: 994px) {
+      h3 {
+        font-size: 29px;
+        line-height: 35.1px;
+        width: 100%;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .ecosystem_intro_governance_cards {
+    background-image: url("../../public//landingpageasserts/governance_portal.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 796px;
+    height: 440px;
+    padding: 1rem 3rem;
 
-		@media (max-width: 1153px) {
-			padding: 1rem 1rem;
-			border-radius: 20px;
-			background-position: cover;
-			width: 100%;
-		}
+    @media (max-width: 1153px) {
+      padding: 1rem 1rem;
+      border-radius: 20px;
+      background-position: cover;
+      width: 100%;
+    }
 
-		.ecosystem_intro_governance_card_header {
-			h3 {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 32px;
-			}
-			p {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 16px;
-				width: 556px;
-			}
-			@media (max-width: 768px) {
-				h3 {
-					font-size: 32px;
-					line-height: 35.1px;
-					width: 100%;
-				}
-				p {
-					width: 100%;
-				}
-			}
-		}
-		.ecosystem_intro_governance_card_body {
-			padding-top: 8rem;
-			display: flex;
-			gap: 2rem;
+    .ecosystem_intro_governance_card_header {
+      h3 {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 32px;
+      }
+      p {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 16px;
+        width: 556px;
+      }
+      @media (max-width: 768px) {
+        h3 {
+          font-size: 32px;
+          line-height: 35.1px;
+          width: 100%;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .ecosystem_intro_governance_card_body {
+      padding-top: 8rem;
+      display: flex;
+      gap: 2rem;
 
-			button {
-				background: #f57316;
-				border-radius: 4px;
-				padding: 0.4rem 1rem;
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 16px;
-				line-height: 19px;
-				font-style: normal;
-				border: none;
-				cursor: pointer;
-				display: flex;
-				align-items: center;
-				gap: 1rem;
-			}
-			@media (max-width: 968px) {
-				padding-top: 3rem;
-				flex-direction: column;
-				gap: 1rem;
+      button {
+        background: #f57316;
+        border-radius: 4px;
+        padding: 0.4rem 1rem;
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      @media (max-width: 968px) {
+        padding-top: 3rem;
+        flex-direction: column;
+        gap: 1rem;
 
-				button {
-					width: 337px;
-				}
-			}
-			@media (max-width: 480px) {
-				button {
-					width: 100%;
-				}
-			}
-		}
-	}
+        button {
+          width: 337px;
+        }
+      }
+      @media (max-width: 480px) {
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 .blockplot_ecosystem {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	padding-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 8rem;
 
-	@media (max-width: 994px) {
-		flex-direction: column;
-	}
-	.blockplot_ecosystem_card {
-		position: relative;
-		height: 421px;
-		width: 796px;
-		background-color: #0a0400;
-		border: 1px solid #6b3005;
-		border-radius: 10px;
-		padding: 1rem 1.4rem;
+  @media (max-width: 994px) {
+    flex-direction: column;
+  }
+  .blockplot_ecosystem_card {
+    position: relative;
+    height: 421px;
+    width: 796px;
+    background-color: #0a0400;
+    border: 1px solid #6b3005;
+    border-radius: 10px;
+    padding: 1rem 1.4rem;
 
-		div {
-			z-index: 100;
-			padding: 1rem 2rem;
-			position: absolute;
+    div {
+      z-index: 100;
+      padding: 1rem 2rem;
+      position: absolute;
 
-			h3 {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 32px;
-			}
-			p {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 16px;
-				width: 556px;
-			}
-			@media (max-width: 768px) {
-				h3 {
-					font-size: 32px;
-					line-height: 35.1px;
-					width: 100%;
-				}
-				p {
-					width: 100%;
-				}
-			}
-		}
-		@media (max-width: 768px) {
-			width: 100%;
-			padding: 0rem;
-		}
-	}
-	.blockplot_ecosystem_card img {
-		position: absolute;
-		z-index: 0;
-		right: 0;
-		top: 30px;
-	}
-	.blockplot_gov {
-		background: #3b1a03;
-		width: 332px;
-		position: relative;
-		border: #f57316 1px solid;
-		border-radius: 8px;
-		padding: 0.1rem 0.4rem;
-		div {
-			h3 {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 32px;
-			}
-			p {
-				font-size: 16px;
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-			}
-		}
-		div:nth-child(2) {
-			display: flex;
-			justify-content: flex-end;
-		}
+      h3 {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 32px;
+      }
+      p {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 16px;
+        width: 556px;
+      }
+      @media (max-width: 768px) {
+        h3 {
+          font-size: 32px;
+          line-height: 35.1px;
+          width: 100%;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 0rem;
+    }
+  }
+  .blockplot_ecosystem_card img {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 30px;
+  }
+  .blockplot_gov {
+    background: #3b1a03;
+    width: 332px;
+    position: relative;
+    border: #f57316 1px solid;
+    border-radius: 8px;
+    padding: 0.1rem 0.4rem;
+    div {
+      h3 {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+      }
+    }
+    div:nth-child(2) {
+      display: flex;
+      justify-content: flex-end;
+    }
 
-		@media (max-width: 994px) {
-			width: 100%;
-			padding: 1rem;
-		}
-	}
+    @media (max-width: 994px) {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
 }
 .blockplot_blog {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-	padding-top: 2rem;
-	.blog {
-		background-color: #0a0400;
-		border: 1px solid #6b3005;
-		width: 332px;
-		height: 421px;
-		position: relative;
-		border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  .blog {
+    background-color: #0a0400;
+    border: 1px solid #6b3005;
+    width: 332px;
+    height: 421px;
+    position: relative;
+    border-radius: 8px;
 
-		div {
-			z-index: 100;
-			position: absolute;
-			padding: 1rem 1.4rem;
+    div {
+      z-index: 100;
+      position: absolute;
+      padding: 1rem 1.4rem;
 
-			h3 {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 32px;
-			}
-			p {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 16px;
-			}
-			button {
-				background: #f57316;
-				border-radius: 4px;
-				padding: 0.4rem 1rem;
-				color: #fde7d8;
-				font-size: 16px;
-				line-height: 19px;
-				font-style: normal;
-				border: none;
-				cursor: pointer;
-				display: flex;
-				align-items: center;
-				gap: 1rem;
-			}
-			@media (max-width: 768px) {
-				h3 {
-					font-size: 32px;
-					line-height: 35.1px;
-					width: 100%;
-				}
-				p {
-					width: 100%;
-				}
-			}
-		}
-		img {
-			position: absolute;
-			z-index: 0;
-			right: 0;
-			bottom: 0;
-		}
-		@media (max-width: 990px) {
-			width: 100%;
-		}
-	}
-	.developers {
-		position: relative;
-		height: 421px;
-		width: 796px;
-		background: #3b1a03;
-		border-radius: 10px;
-		div {
-			z-index: 100;
-			padding: 1rem 3rem;
-			position: absolute;
+      h3 {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 32px;
+      }
+      p {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 16px;
+      }
+      button {
+        background: #f57316;
+        border-radius: 4px;
+        padding: 0.4rem 1rem;
+        color: #fde7d8;
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      @media (max-width: 768px) {
+        h3 {
+          font-size: 32px;
+          line-height: 35.1px;
+          width: 100%;
+        }
+        p {
+          width: 100%;
+        }
+      }
+    }
+    img {
+      position: absolute;
+      z-index: 0;
+      right: 0;
+      bottom: 0;
+    }
+    @media (max-width: 990px) {
+      width: 100%;
+    }
+  }
+  .developers {
+    position: relative;
+    height: 421px;
+    width: 796px;
+    background: #3b1a03;
+    border-radius: 10px;
+    div {
+      z-index: 100;
+      padding: 1rem 3rem;
+      position: absolute;
 
-			h3 {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 32px;
-			}
-			p {
-				font-family: "Mena Grotesk, sans-serif";
-				color: #fde7d8;
-				font-size: 16px;
-				width: 556px;
-			}
-			button {
-				background: #f57316;
-				border-radius: 4px;
-				padding: 0.4rem 1rem;
-				color: #fde7d8;
-				font-size: 16px;
-				line-height: 19px;
-				font-style: normal;
-				border: none;
-				cursor: pointer;
-				display: flex;
-				align-items: center;
-				gap: 1rem;
-				
-			}
-			@media (max-width: 990px) {
-				h3 {
-					font-size: 32px;
-					line-height: 35.1px;
-					width: 100%;
-				}
-				p {
-					width: 100%;
-				}
-				padding: 1rem 0.3rem;
-			}
-		}
-		div:nth-child(2) {
-			display: flex;
-			position: absolute;
-			gap: 1rem;
-			top: 300px;
+      h3 {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 32px;
+      }
+      p {
+        font-family: "Mena Grotesk, sans-serif";
+        color: #fde7d8;
+        font-size: 16px;
+        width: 556px;
+      }
+      button {
+        background: #f57316;
+        border-radius: 4px;
+        padding: 0.4rem 1rem;
+        color: #fde7d8;
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      @media (max-width: 990px) {
+        h3 {
+          font-size: 32px;
+          line-height: 35.1px;
+          width: 100%;
+        }
+        p {
+          width: 100%;
+        }
+        padding: 1rem 0.3rem;
+      }
+    }
+    div:nth-child(2) {
+      display: flex;
+      position: absolute;
+      gap: 1rem;
+      top: 300px;
 
-			button {
-				background: #f57316;
-				border-radius: 4px;
-				padding: 0.4rem 1rem;
-				color: #fde7d8;
-				font-size: 16px;
-				line-height: 19px;
-				font-style: normal;
-				border: none;
-				cursor: pointer;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				gap: 1rem;
-				width: 100%;
+      button {
+        background: #f57316;
+        border-radius: 4px;
+        padding: 0.4rem 1rem;
+        color: #fde7d8;
+        font-size: 16px;
+        line-height: 19px;
+        font-style: normal;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
 
-				@media (max-width: 968px) {
-					button {
-						width: 100%;
-					}
-				}
-			}
-			@media (max-width: 990px) {
-				width: 100%;
-				top: 280px;
-				flex-direction: column;
-			}
-		}
-		@media (max-width: 990px) {
-			width: 100%;
-		}
-	}
-	@media (max-width: 990px) {
-		flex-direction: column-reverse;
-	}
+        @media (max-width: 968px) {
+          button {
+            width: 100%;
+          }
+        }
+      }
+      @media (max-width: 990px) {
+        width: 100%;
+        top: 280px;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 990px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 990px) {
+    flex-direction: column-reverse;
+  }
 }
 .blockplot_community {
-	padding-top: 8rem;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 1rem;
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 
-	div:nth-child(1) {
-		grid-column: 1/3;
-		h3 {
-			font-family: "Mena Grotesk, sans-serif";
-			color: #fde7d8;
-			font-size: 40px;
-			font-weight: 700;
-			line-height: 47.6px;
-			width: 100%;
-		}
-		p {
-			font-family: "Mena Grotesk, sans-serif";
-			color: #fde7d8;
-			font-size: 16px;
-			line-height: 19px;
-			width: 100%;
-		}
-	}
-	div:nth-child(2),
-	div:nth-child(3),
-	div:nth-child(4),
-	div:nth-child(5),
-	div:nth-child(6),
-	div:nth-child(7),
-	div:nth-child(8) {
-		border: #fde7d8 1px solid;
-		border-radius: 10px;
-		height: 84px;
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-		p {
-			font-family: "Mena Grotesk, sans-serif";
-			color: #fde7d8;
-			font-size: 16px;
-			line-height: 19px;
-			width: 100%;
-			text-align: center;
-		}
-		img {
-			height: 23px;
-		}
-	}
-	div:nth-child(2) {
-		margin-top: 4rem;
-	}
-	div:nth-child(2):hover,
-	div:nth-child(3):hover,
-	div:nth-child(4):hover,
-	div:nth-child(5):hover,
-	div:nth-child(6):hover,
-	div:nth-child(7):hover,
-	div:nth-child(8):hover{
-		border: #f57316 1px solid;
-	}
-	@media (max-width: 968px) {
-		grid-template-columns: repeat(2, 1fr);
-		div:nth-child(1) {
-			grid-column: 1/3;
-		}
-		div:nth-child(2),
-		div:nth-child(3),
-		div:nth-child(4),
-		div:nth-child(5),
-		div:nth-child(6),
-		div:nth-child(7),
-		div:nth-child(8) {
-			height: 84px;
-			width: 100%;
-		}
-		div:nth-child(2){
-			margin-top: 0rem;
-		}
-		div:nth-child(8){
-			grid-column: 1/3;
-		}
-	}
-
+  div:nth-child(1) {
+    grid-column: 1/3;
+    h3 {
+      font-family: "Mena Grotesk, sans-serif";
+      color: #fde7d8;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 47.6px;
+      width: 100%;
+    }
+    p {
+      font-family: "Mena Grotesk, sans-serif";
+      color: #fde7d8;
+      font-size: 16px;
+      line-height: 19px;
+      width: 100%;
+    }
+  }
+  div:nth-child(2),
+  div:nth-child(3),
+  div:nth-child(4),
+  div:nth-child(5),
+  div:nth-child(6),
+  div:nth-child(7),
+  div:nth-child(8) {
+    border: #fde7d8 1px solid;
+    border-radius: 10px;
+    height: 84px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    p {
+      font-family: "Mena Grotesk, sans-serif";
+      color: #fde7d8;
+      font-size: 16px;
+      line-height: 19px;
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      height: 23px;
+    }
+  }
+  div:nth-child(2) {
+    margin-top: 4rem;
+  }
+  div:nth-child(2):hover,
+  div:nth-child(3):hover,
+  div:nth-child(4):hover,
+  div:nth-child(5):hover,
+  div:nth-child(6):hover,
+  div:nth-child(7):hover,
+  div:nth-child(8):hover {
+    border: #f57316 1px solid;
+  }
+  @media (max-width: 968px) {
+    grid-template-columns: repeat(2, 1fr);
+    div:nth-child(1) {
+      grid-column: 1/3;
+    }
+    div:nth-child(2),
+    div:nth-child(3),
+    div:nth-child(4),
+    div:nth-child(5),
+    div:nth-child(6),
+    div:nth-child(7),
+    div:nth-child(8) {
+      height: 84px;
+      width: 100%;
+    }
+    div:nth-child(2) {
+      margin-top: 0rem;
+    }
+    div:nth-child(8) {
+      grid-column: 1/3;
+    }
+  }
 }
 .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 // padding-top: 8rem;
