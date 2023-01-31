@@ -1,71 +1,71 @@
 .mobile_dashboard_nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 .mobile_dashBG {
-    background: #ffff;
-    padding: 1rem 0;
-    position: relative;
+  background: #ffff;
+  padding: 1rem 0;
+  position: relative;
 }
 .close__menu {
-    display: flex;
-    justify-content: flex-end;
-    padding: 2rem 1rem;
-    cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 1rem;
+  cursor: pointer;
 }
 .sidebar__menu {
-    padding: 1rem 0;
-    position: absolute;
-    top: -1rem;
-    bottom: 0;
-    padding: 1rem 2rem;
-    width: 80%;
-    height: 100vh;
-    z-index: 99;
-    background: #ffffff;
-    backdrop-filter: blur(5px);
-    border-radius: 12px;
-    animation-name: animateModal;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in;
-    -webkit-animation-fill-mode: forwards;
+  padding: 1rem 0;
+  position: absolute;
+  top: -1rem;
+  bottom: 0;
+  padding: 1rem 2rem;
+  width: 80%;
+  height: 100vh;
+  z-index: 99;
+  background: #ffffff;
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  animation-name: animateModal;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
 }
 @keyframes animateModal {
-    0% {
-        right: -10rem;
-    }
-    100% {
-        right: 0;
-    }
+  0% {
+    right: -10rem;
+  }
+  100% {
+    right: 0;
+  }
 }
 .routes {
-    padding: 0.5rem 1rem;
-    cursor: pointer;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 .routes button {
-    color: #898989;
+  color: #898989;
 }
 .active {
-    background-color: #f57316;
+  background-color: #f57316;
 }
 .active button {
-    color: white;
+  color: white;
 }
 .active path {
-    stroke: #fff;
+  stroke: #fff;
 }
 .route_class {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    height: 3.3rem;
-    background: none;
-    border: none;
-    font-family: 'Outfit';
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 3.3rem;
+  background: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
 /* @keyframes showNav {
    from {
@@ -77,9 +77,9 @@
  } */
 
 .sidebar__footer {
-    display: flex;
-    padding: 0.5rem 1rem;
-    gap: 1rem;
-    color: #4d0000;
-    cursor: pointer;
+  display: flex;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+  color: #4d0000;
+  cursor: pointer;
 }
