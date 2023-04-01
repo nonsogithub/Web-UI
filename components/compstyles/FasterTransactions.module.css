@@ -177,7 +177,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 8rem 0;
 }
 .faster_transactions_faq h1 {
@@ -186,7 +185,6 @@
 .accordion_width {
   width: 100%;
   background-color: transparent;
-  /* max-width: 1200px; */
 }
 .accordion_header {
   background-color: transparent;

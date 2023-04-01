@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BsBank } from "react-icons/bs";
 import { RiFilePaper2Line } from "react-icons/ri";
 import styles from "./compstyles/EcoSystem.module.scss";
+import BigJoinWaitList from "./Buttons/BigJoinWaitList";
 import {
   BlogCard,
   CommunityCard,
@@ -14,6 +15,8 @@ import {
   GovernanceCard,
 } from "./Cards";
 import { BsArrowUpRight } from "react-icons/bs";
+import ButtonStyles from "./Buttons/Buttons.module.css";
+import { FaCoins, FaCommentDollar, FaMoneyCheckAlt } from "react-icons/fa";
 
 const EcoSystem = () => {
   return (
@@ -22,7 +25,7 @@ const EcoSystem = () => {
         <div className={styles.ecosystem_intro_governance}>
           <div className={styles.ecosystem_intro_governance_header}>
             <h3>Africa’s first tokenized bank</h3>
-            <p>Community Owned, Complaint & Decentralized</p>
+            <p>Community Owned, Complaint & Permissioned</p>
           </div>
           <div
             className={styles.ecosystem_intro_governance_cards}
@@ -33,9 +36,9 @@ const EcoSystem = () => {
             <div className={styles.ecosystem_intro_governance_card_header}>
               <h3>Protocol Governance</h3>
               <p>
-                Token holders vote on property decisions through our
+                Asset holders vote on property decisions through our
                 decentralized governance system. Decisions range from rental
-                increment to repair requests and more. The majority decide on
+                increment to repair requests and more. The majority decides on
                 what should be done & relayed to the property management for
                 execution.
               </p>
@@ -66,7 +69,7 @@ const EcoSystem = () => {
             <div>
               <h3>Blockplot Ecosystem</h3>
               <p>
-                Asset issuers, Developers, traders, liquidity providers, and
+                Asset issuers, Real estate investors, liquidity providers, and
                 various level of professionals all in a decentralized financial
                 marketplace, accessible to all. Built on the principles of
                 decentralization and community consensus
@@ -84,8 +87,8 @@ const EcoSystem = () => {
             <div>
               <h3>Governance</h3>
               <p>
-                Blockplot ecosystem is community owned, and governed by $BPT
-                token hodlers
+                Blockplot ecosystem is community owned, and governed by very
+                member of the ecosystem
               </p>
             </div>
             <div>
@@ -154,13 +157,65 @@ const EcoSystem = () => {
             <img src="./landingpageasserts/dev_ecllipse.svg" />
           </div>
         </div>
+        <div className={styles.how_to_invest}>
+          <div>
+            <h3>How It Works</h3>
+          </div>
+          <div className={styles.how_to_invest_container}>
+            <div className={styles.how_to_invest_cards}>
+              <h2>Fractional Ownership</h2>
+              <div>
+                We bring real estate assets to the blockchain, fractionalize it,
+                and offer it to users to buy as Tokenized assets
+              </div>
+              <div className={styles.invest_footer_images}>
+                <FaCoins className={styles.invest_icons} />
+              </div>
+            </div>
+            <div className={styles.how_to_invest_cards}>
+              <h2>Buy, Sell or Trade</h2>
+              <div>
+                Buy Real estate tokens from our marketplace and sell whenever on
+                secondary markets with none of the tradFi limitations.
+              </div>
+              <div className={styles.invest_footer_images}>
+                <FaMoneyCheckAlt className={styles.invest_icons} />
+              </div>
+            </div>
+            <div className={styles.how_to_invest_cards}>
+              <h2>Earn Passive Income </h2>
+              <div>
+                Earn yields as Rental income is collected and distributed to
+                your wallet address.
+              </div>
+              <div className={styles.invest_footer_images}>
+                <FaCommentDollar className={styles.invest_icons} />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className={styles.blockplot_community}>
           <div>
-            <h3>Community</h3>
+            {/* <h3>Join Our Community</h3> */}
+            <Link
+              href="/joinwaitlist"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <button
+                  type="button"
+                  className={ButtonStyles.join_community_btn}
+                >
+                  Join Our Community
+                </button>
+              </div>
+            </Link>
             <p>
               The Blockplot ecosystem is an ecosystem of designers, developers,
-              managers, traders and professionals. Join the conversation. – Our
-              community determines the success of our protocol
+              Liquidity providers, Real estate investors, professionals. Join
+              the conversation. – Our community determines the success of our
+              protocol
             </p>
           </div>
           <div>

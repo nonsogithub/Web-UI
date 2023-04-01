@@ -13,39 +13,39 @@ import Footer from "../components/Footer";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-	const ref = useRef(null);
+  const ref = useRef(null);
 
-	const options = {
-		smooth: true,
-		multiplier: 1,
-		smartphone: {
-			smooth: true,
-		},
-	};
+  const options = {
+    smooth: true,
+    multiplier: 1,
+    smartphone: {
+      smooth: true,
+    },
+  };
 
-	return (
-		<div>
-			<Head>
-				<title>Blockplot</title>
-				<meta name="description" content="Blockchain Housing Investment" />
-				<link rel="icon" href="/blockplot.ico" />
-			</Head>
-			<div className={styles.nav_heroImage}>
-				<NavBar />
-				<HeroSection />
-				<EcoSystem />
-				<FasterTransactions />
-				<Footer />
-			</div>
-			{/* <LocomotiveScrollProvider
+  return (
+    <div>
+      <Head>
+        <title>Blockplot</title>
+        <meta name="description" content="Blockchain Housing Investment" />
+        <link rel="icon" href="/blockplot.ico" />
+      </Head>
+      <div className={styles.nav_heroImage}>
+        <NavBar />
+        <HeroSection />
+        <EcoSystem />
+        <FasterTransactions />
+        <Footer />
+      </div>
+      {/* <LocomotiveScrollProvider
 				options={options}
 				containerRef={ref}></LocomotiveScrollProvider> */}
 
-			{/* <EcoSystem /> */}
-			{/* <FasterTransactions /> */}
-			{/* <Footer /> */}
-		</div>
-	);
+      {/* <EcoSystem /> */}
+      {/* <FasterTransactions /> */}
+      {/* <Footer /> */}
+    </div>
+  );
 };
 
 export default Home;

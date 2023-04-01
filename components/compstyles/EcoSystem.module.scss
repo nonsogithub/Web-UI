@@ -201,6 +201,54 @@
     }
   }
 }
+.how_to_invest {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.how_to_invest h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-style: bold;
+  color: #fde7d8;
+  text-transform: capitalize;
+}
+.how_to_invest_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.how_to_invest_cards {
+  width: 332px;
+  position: relative;
+  height: 350px;
+  padding: 0.1rem 0.4rem;
+  color: #fde7d8;
+  margin: 1rem;
+  border: #f57316 1px solid;
+  border-radius: 8px;
+  div {
+    margin-top: 2rem;
+  }
+  .invest_footer_images {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    background: #3b1a03;
+    height: 120px;
+    width: 120px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 8px;
+    .invest_icons {
+      font-size: 3rem;
+    }
+  }
+}
 .blockplot_blog {
   display: flex;
   align-items: center;

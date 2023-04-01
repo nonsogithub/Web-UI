@@ -7,20 +7,24 @@ import { openModal } from "../../reduxSlices/allModalSlice";
 import styles from "./Buttons.module.css";
 
 const SmallJoinWaitList = () => {
-	const dispatch = useAppDispatch();
-	const handleWaitlistModal = () => {
-		dispatch(openModal("waitlistmodal"));
-	};
+  const dispatch = useAppDispatch();
+  const handleWaitlistModal = () => {
+    dispatch(openModal("waitlistmodal"));
+  };
 
-	return (
-		<Link href="/joinwaitlist" target="_blank" rel="noopener noreferrer">
-			<div>
-				<button type="button" className={styles.smallconnect_button}>
-					Join Waitlist
-				</button>
-			</div>
-		</Link>
-	);
+  return (
+    <Link
+      href="https://app.blockplot.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div>
+        <button type="button" className={styles.smallconnect_button}>
+          Launch App
+        </button>
+      </div>
+    </Link>
+  );
 };
 
 export default SmallJoinWaitList;

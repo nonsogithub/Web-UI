@@ -1,18 +1,16 @@
 /** @format */
 
 .container {
-	padding: 0 2rem;
+  padding: 0 2rem;
 }
 .nav_heroImage {
-	background-image: url("../public/landingpageasserts/dark_theme.svg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  /* background-image: url("../public/landingpageasserts/dark_theme.svg"); */
+  background: black;
 }
 
 .nav_joinImage {
-	background-image: url("../public/joinwaitlistimages/joinwaitlist.svg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+  background-image: url("../public/joinwaitlistimages/joinwaitlist.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
